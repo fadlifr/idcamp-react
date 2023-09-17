@@ -1,0 +1,78 @@
+[33mcommit 66a4e9082cf5cb11a538666ad3225a6271e3792e[m[33m ([m[1;36mHEAD -> [m[1;32mmodul-pendalaman-html[m[33m, [m[1;31morigin/modul-pendalaman-html[m[33m)[m
+Author: ffrwebdev <ffr.learning@gmail.com>
+Date:   Sun Sep 17 01:47:49 2023 +0700
+
+    semantic html
+
+[33mcommit 4089574544fbcac64f60baa0620ad63e994edbc3[m
+Author: ffrwebdev <ffr.learning@gmail.com>
+Date:   Sun Sep 17 01:21:27 2023 +0700
+
+    latihan menerapkan elemen anchor
+
+[33mcommit 8808be0955ea051013d536ee64559fdff0e07c4a[m
+Merge: 1fc1c4b 8b80f4f
+Author: ffrwebdev <ffr.learning@gmail.com>
+Date:   Sat Sep 16 18:57:54 2023 +0700
+
+    Merge branch 'modul-pendalaman-html' of github.com:fadlifr/idcamp-react into modul-pendalaman-html
+
+[33mcommit 1fc1c4bb3370b6774b547f6516754c0c2fcd3fa8[m
+Author: ffrwebdev <ffr.learning@gmail.com>
+Date:   Sat Sep 16 18:53:38 2023 +0700
+
+    crerate sandbox.html
+
+[33mcommit 8b80f4fba8b4f9ab99e2ce2e89390f41f0675c85[m
+Merge: 49a859c ae6a586
+Author: Fadli Faturrahman Rusli <ffr.learning@gmail.com>
+Date:   Sat Sep 16 01:55:16 2023 +0700
+
+    Merge pull request #2 from fadlifr/main
+    
+    Merge pull request #1 from fadlifr/modul-pendalaman-html
+
+[33mcommit 49a859cd25b936f378113214548be774461acfd8[m
+Author: ffrwebdev <ffr.learning@gmail.com>
+Date:   Sat Sep 16 01:54:21 2023 +0700
+
+    add long quote, preformatted text
+
+[33mcommit a735163c69e50c21cd3dedb35688acb1d2128426[m
+Author: ffrwebdev <ffr.learning@gmail.com>
+Date:   Sat Sep 16 01:45:27 2023 +0700
+
+    add folder dan teks
+
+[33mcommit 0c5e15fe64fa12c42207c72ae3e921b18adf4232[m
+Author: ffrwebdev <ffr.learning@gmail.com>
+Date:   Sat Sep 16 01:30:24 2023 +0700
+
+    add assets/images folder
+    
+    add the images to html
+
+[33mcommit ae6a5867a5e66518c758301afad6f71aa4ab2f51[m[33m ([m[1;31morigin/main[m[33m)[m
+Merge: d9139bd efec5c9
+Author: Fadli Faturrahman Rusli <ffr.learning@gmail.com>
+Date:   Sat Sep 16 01:16:45 2023 +0700
+
+    Merge pull request #1 from fadlifr/modul-pendalaman-html
+    
+    create folder halaman-profil-bandung
+
+[33mcommit efec5c92c08d108b8a7101ec83a788698b46909d[m
+Author: ffrwebdev <ffr.learning@gmail.com>
+Date:   Sat Sep 16 01:15:08 2023 +0700
+
+    create folder halaman-profil-bandung
+    
+    move index.html inside
+
+[33mcommit d9139bdb3e2dc096d90b6fd75fd7b4cadf15a902[m[33m ([m[1;32mmain[m[33m)[m
+Author: ffrwebdev <ffr.learning@gmail.com>
+Date:   Sat Sep 16 00:15:36 2023 +0700
+
+    first commit
+    
+    add index.html and readme
