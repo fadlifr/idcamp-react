@@ -186,5 +186,53 @@
 				<td>Gundala</td>
 			</tr>
 		</table>
+		<br /><br />
+
+		<!-- Input user -->
+		<input type="text" value="Belajar Dasar Pemrograman Web" /> <br /><br />
+		<textarea>
+			Belajar
+			Dasar
+			Pemrograman
+			Web
+		</textarea
+		>
+		<br /><br /><br />
+		<!-- labeling -->
+		<!-- atribut pada elemen input -->
+		<br /><br />
+		<div>
+			<label for="email">Email</label>
+			<br />
+			<input type="email" id="email" placeholder="example@mail.com" required />
+		</div>
+		<div>
+			<label for="password">Password</label>
+			<br />
+			<input type="password" id="password" placeholder="********" required />
+		</div>
+		<!-- membuat formulir -->
+		<br /><br /><br /><br />
+		<!-- <form method="POST" action="https://example.com/"> or -->
+		<form method="GET" action="https://example.com/">
+			<div>
+				<label for="fullName">Nama</label>
+				<input id="fullName" name="fullName" required />
+			</div>
+
+			<div>
+				<label for="checkIn">Tanggal Check-In</label>
+				<input type="date" id="checkIn" name="checkIn" required />
+			</div>
+
+			<div>
+				<label for="checkOut">Tanggal Check-Out</label>
+				<input type="date" id="checkOut" name="checkOut" required />
+			</div>
+
+			<button type="submit">Submit</button>
+		</form>
+		<!-- special character -->
+		<!-- ASCII characters & “escaped” character (numeric entity: &#169;, named entity: &copy;) -->
 	</body>
 </html>
