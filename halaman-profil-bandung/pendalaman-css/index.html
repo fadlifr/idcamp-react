@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Pendalamaan CSS</title>
+	</head>
+	<body>
+		<ul>
+			<ul>
+				<li><a href="#internal">Internal link</a></li>
+				<li><a href="http://example.com">Example link</a></li>
+				<li><a href="#InSensitive">Insensitive internal link</a></li>
+				<li><a href="http://example.org">Example org link</a></li>
+			</ul>
+		</ul>
+
+		<br /><br /><br /><br /><br />
+		<p>
+			Ini merupakan paragraf biasa atau tidak menerapkan atribut apapun. Maka
+			teks pada paragraf ini akan berwarna hijau
+		</p>
+		<p lang="en-us">
+			This is an English paragraph contains en-us value of lang attribute, so
+			this text will be green and italic.
+		</p>
+
+		<h1>Ini merupakan sebuah header biasa</h1>
+		<h1 lang="en-us">This is an English Header</h1>
+
+		<p class="warning">
+			Perhatikan paragraf ini! Paragraf ini merupakan paragraf yang memiliki
+			kelas bernilai warning, sehingga teks dari paragraf ini akan berwarna
+			merah
+		</p>
+
+		<div id="content">
+			<p>
+				Ini merupakan sebuah teks di dalam sebuah div yang memiliki id bernilai
+				"content", seharusnya paragraf ini dibungkus dalam border yang memiliki
+				padding 20px
+			</p>
+		</div>
+		<!-- adjacent sibling selector(+) -->
+		<div>
+			<p>
+				Adjacent Sibling Selector terdiri dari dua buah target elemen, tetapi
+				hanya elemen kedua yang menerapkan rule selama elemen tersebut
+				dituliskan langsung setelah elemen pertama pada berkas HTML. Selain itu,
+				kedua elemen tersebut harus berada dalam induk elemen yang sama.
+			</p>
+			<p>
+				Ini merupakan paragraf pertama. Rule styling tidak akan diterapkan pada
+				elemen paragraf ini.
+			</p>
+			<img
+				src="https://i.imgur.com/cs2BJzw.jpg"
+				alt="Dicoding logo"
+				width="400px"
+			/>
+			<p>
+				Ini merupakan paragraf kedua dan ditetapkan setelah elemen gambar. Maka
+				paragraf ini seharusnya menerapkan rule dengan menampilkan teks berwarna
+				blue violet.
+			</p>
+			<br /><br />
+			<!-- general sibling selector(~) -->
+			<p>
+				Mirip seperti Adjacent Sibling Selector, tetapi rules akan diterapkan
+				pada seluruh elemen kedua yang berada setelah elemen pertama selama
+				masih memiliki induk yang sama, walaupun posisi dari elemen kedua tidak
+				berada tepat setelahnya.
+			</p>
+			<p>
+				Rule di atas akan diterapkan pada elemen paragraf yang berada setelah
+				elemen img selama masih di dalam induk yang sama.
+			</p>
+
+			<div>
+				<p>
+					Ini merupakan paragraf ketiga. Letaknya memang setelah elemen gambar,
+					Namun, tidak diletakkan persis setelahnya, sehingga rule tidak akan
+					diterapkan pada elemen ini.
+				</p>
+			</div>
+			<p>
+				Ini merupakan paragraf empat. Letaknya memang setelah elemen gambar dan
+				memiliki induk yang sama seperti elemen gambar, sehingga elemen ini akan
+				menerapkan rule dengan menampilkan teks berwarna hijau.
+			</p>
+		</div>
+
+		<br /><br />
+		<!-- child selector (>) -->
+		<p>
+			Child Selector menggabungkan dua buah basic selector dengan menggunakan
+			tanda greater than (>) di antara basic selectornya
+		</p>
+		<p>
+			CSS rule akan diterapkan pada seluruh elemen paragraf yang berada dalam
+			elemen div <strong>secara langsung</strong>
+		</p>
+		<div id="child-selector">
+			<p>Paragraf pertama. di dalam div.</p>
+			<p>Paragraf kedua. di dalam div.</p>
+			<section>
+				<p>
+					Paragraf ketiga. di dalam div Namun, bukan sebagai anak elemen secara
+					langsung.
+				</p>
+			</section>
+			<p>Paragraf keempat. di dalam div.</p>
+		</div>
+		<p>Paragraf kelima. di luar div.</p>
+		<p>Paragraf keenam. di luar div.</p>
+		<br /><br />
+		<!-- descendent selector (space) -->
+		<p>
+			Descendant Selector mirip seperti child selector, tetapi hierarkinya lebih
+			luas karena rule akan diterapkan pada seluruh elemen yang menjadi
+			turunannya walaupun <strong>secara tidak langsung</strong>
+		</p>
+
+		<br /><br />
+		<!-- psuedo selector -->
+		<p>
+			Selector ini menargetkan elemen pada bagian yang “tidak terlihat”, seperti
+			sifat pada elemen sehingga untuk menetapkannya tidak bisa menggunakan
+			selector biasa. Salah satu contoh yang paling sering kita terapkan adalah
+			:hover/p>
+		</p>
+    <a href="https://www.google.com/">Kunjungi Halaman Google</a>
+    <blockquote>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eius error
+      explicabo ipsum molestiae necessitatibus nesciunt possimus reprehenderit sed
+      voluptates. Aliquam aspernatur autem est nobis officia praesentium quas
+      recusandae rem.
+    </blockquote>
+    <!-- formatting text -->
+
+    <p>CSS memiliki fitur yang digunakan untuk memasukkan font eksternal ke dalam CSS, yakni menggunakan <strong>@font-face</strong></p>
+    <br>
+    <p>Satuan dalam menetapkan ukuran font terbagi dua jenis.</p>
+    <p>Relative Unit: Satuan yang nilainya tergantung pada suatu hal. Contohnya, ukuran viewport, induk elemen, atau ukuran teks standar.</p>
+    <p>Absolute Unit: Satuan yang nilainya telah ditentukan atau digunakan dalam dunia nyata.</p>
+	</body>
+</html>
