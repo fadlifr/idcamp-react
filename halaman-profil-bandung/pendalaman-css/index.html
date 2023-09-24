@@ -130,6 +130,93 @@
 			selector biasa. Salah satu contoh yang paling sering kita terapkan adalah
 			:hover/p>
 		</p>
+		<a href="https://www.google.com/">Kunjungi Halaman Google</a>
+		<blockquote>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eius error
+			explicabo ipsum molestiae necessitatibus nesciunt possimus reprehenderit
+			sed voluptates. Aliquam aspernatur autem est nobis officia praesentium
+			quas recusandae rem.
+		</blockquote>
+		<!-- formatting text -->
+
+		<p>
+			CSS memiliki fitur yang digunakan untuk memasukkan font eksternal ke dalam
+			CSS, yakni menggunakan <strong>@font-face</strong>
+		</p>
+		<br />
+		<p>Satuan dalam menetapkan ukuran font terbagi dua jenis.</p>
+		<p>
+			Relative Unit: Satuan yang nilainya tergantung pada suatu hal. Contohnya,
+			ukuran viewport, induk elemen, atau ukuran teks standar.
+		</p>
+		<p>
+			Absolute Unit: Satuan yang nilainya telah ditentukan atau digunakan dalam
+			dunia nyata.
+		</p>
+		<br /><br /><br />
+		<!-- Box models -->
+		<p>
+			Sebelum CSS3, ukuran lebar dan panjang elemen mengacu pada konten elemen
+			(content-box). Itu berarti ukuran elemen seluruhnya merupakan nilai
+			panjang (width) dan lebar (height) yang kita spesifikasikan ditambah
+			dengan nilai padding dan border yang diterapkan pada elemen
+		</p>
+		<p>
+			Pada CSS3, kita dapat memilih tipe pengukuran lain dalam menentukan
+			dimensi elemen. Dengan menggunakan properti box-sizing, kita dapat
+			menentukannya berdasarkan border box. Ukuran elemen sudah termasuk
+			content, padding, dan border
+		</p>
+		<br /><br />
+		<!-- display roles -->
+		<p>
+			Dengan menggunakan properti display, kita dapat mengubah sebuah elemen
+			inline menjadi block:
+		</p>
+		<ul>
+			<li>
+				<strong>inline:</strong> mengubah elemen block berperilaku seperti
+				elemen inline.
+			</li>
+			<li>
+				<strong>block:</strong> mengubah elemen inline berperilaku seperti
+				elemen block.
+			</li>
+			<li>
+				<strong>inline-block:</strong> membuat elemen block tidak menambahkan
+				baris baru ketika dibuat, tetapi tetap mempertahankan sifat lain dari
+				elemen block.
+			</li>
+			<li><strong>none:</strong> menyembunyikan elemen dari halaman.</li>
+		</ul>
+		<!-- box shadow -->
+		<p>
+			cara kerja dari properti box-shadow mirip seperti text-shadow, yaitu
+			nilainya menentukan jarak vertikal dan horizontal, tingkat keburaman, dan
+			warna pada bayangan
+		</p>
+		<ul>
+			<li>
+				Nilai pertama: menunjukkan seberapa jauh ke kiri atau kanan (horizontal)
+				bayangan harus ditampakkan.
+			</li>
+			<li>
+				Nilai kedua: menunjukkan jarak ke atas atau ke bawah (vertical) bayangan
+				harus ditampakkan.
+			</li>
+			<li>
+				Nilai ketiga (opsional): menentukan tingkat keburaman yang harus
+				diterapkan pada bayangan.
+			</li>
+			<li>
+				Nilai keempat (opsional): tingkat sebaran (spread) bayangan. Semakin
+				besar nilai yang ditentukan, bayangan yang tampak akan semakin luas.
+			</li>
+			<li>Nilai kelima: menentukan warna yang digunakan pada bayangan.</li>
+		</ul>
+		<pre>
+			box-shadow: 6px 6px 5px 10px #666666;
+		</pre>
     <a href="https://www.google.com/">Kunjungi Halaman Google</a>
     <blockquote>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eius error
