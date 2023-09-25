@@ -1,3 +1,7 @@
+* {
+	box-sizing: border-box;
+}
+
 body {
 	font-family: 'Quicksand', sans-serif;
 	margin: 0;
@@ -73,4 +77,17 @@ nav {
 }
 main {
 	padding: 20px;
+	overflow: auto;
 }
+
+/* latihan float */
+#content {
+	float: left;
+	width: 75%;
+}
+aside {
+	float: right;
+	width: 25%;
+	padding-left: 20px;
+}
+
