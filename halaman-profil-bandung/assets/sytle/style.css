@@ -74,6 +74,9 @@ nav li {
 nav {
 	background-color: rgb(0, 162, 198);
 	padding: 5px;
+	/* latihan  sticky position pada nav */
+	position: sticky;
+	top: 0;
 }
 main {
 	padding: 20px;
@@ -89,4 +92,16 @@ aside {
 	float: right;
 	width: 25%;
 	padding-left: 20px;
+}
+/* biar nav bisa stick di top */
+header {
+	display: inline;
+}
+
+/* Responsive screen */
+@media screen and (max-width: 1000px) {
+	#content, aside {
+		width: 100%;
+		padding: 0;
+	}
 }
