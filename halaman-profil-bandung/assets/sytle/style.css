@@ -8,6 +8,54 @@ body {
 	padding: 0;
 }
 
+/* biar nav bisa stick di top */
+header {
+	display: inline;
+}
+
+/* navigasi bar */
+nav {
+	background-color: rgb(0, 162, 198);
+	padding: 5px;
+	/* latihan  sticky position pada nav */
+	position: sticky;
+	top: 0;
+}
+nav ul {
+	padding-inline: 4rem;
+	display: flex;
+	gap: 2rem;
+}
+nav li {
+	/* display: inline; */
+	list-style-type: none;
+	/* margin-right: 20px; */
+}
+/* latihan ukuran, tebal, alignment */
+nav a {
+	font-size: 18px;
+	font-weight: 400;
+	text-decoration: none;
+	color: #f5f5f5;
+}
+nav a:hover {
+	font-weight: 700;
+}
+
+main {
+	padding: 20px;
+	/* overflow: auto; */
+	display: flex;
+	gap: 1.5rem;
+}
+
+aside {
+	/* float: right; */
+	/* width: 25%; */
+	/* padding-left: 20px; */
+	flex: 1;
+}
+
 h2,
 h3 {
 	color: #00a2c6;
@@ -21,16 +69,23 @@ footer {
 	font-weight: 700;
 }
 
-/* latihan ukuran, tebal, alignment */
-nav a {
-	font-size: 18px;
-	font-weight: 400;
-	text-decoration: none;
-	color: #f5f5f5;
+/* latihan float */
+#content {
+	/* float: left; */
+	/* width: 75%; */
+	flex: 5;
+	display: flex;
+	flex-flow: column nowrap;
+	gap: 1rem 2rem;
 }
 
-nav a:hover {
-	font-weight: 700;
+/* menambahkan hero section/jumbotron */
+.jumbtron {
+	font-size: 20px;
+	padding: 60px;
+	background-color: rgb(0, 200, 235);
+	text-align: center;
+	color: #f5f5f5;
 }
 
 .profile header {
@@ -56,52 +111,31 @@ nav a:hover {
 	margin-top: 25px;
 }
 
-/* menambahkan hero section/jumbotron */
-.jumbtron {
-	font-size: 20px;
-	padding: 60px;
-	background-color: rgb(0, 200, 235);
-	text-align: center;
-	color: #f5f5f5;
-}
-/* navigasi bar */
-nav li {
-	display: inline;
-	list-style-type: none;
-	margin-right: 20px;
-}
-nav {
-	background-color: rgb(0, 162, 198);
-	padding: 5px;
-	/* latihan  sticky position pada nav */
-	position: sticky;
-	top: 0;
-}
-main {
-	padding: 20px;
-	overflow: auto;
-}
-
-/* latihan float */
-#content {
-	float: left;
-	width: 75%;
-}
-aside {
-	float: right;
-	width: 25%;
-	padding-left: 20px;
-}
-/* biar nav bisa stick di top */
-header {
-	display: inline;
-}
-
 /* Responsive screen */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
+	main {
+		flex-flow: column nowrap;
+	}
+
+	main aside {
+		align-self: center;
+	}
+}
+
+/* @media screen and (max-width: 1000px) {
 	#content,
 	aside {
 		width: 100%;
 		padding: 0;
+	}
+} */
+
+@media screen and (max-width: 768px) {
+	nav ul {
+		justify-content: center;
+	}
+
+	main aside {
+		align-self: stretch;
 	}
 }
